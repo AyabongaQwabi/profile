@@ -403,7 +403,7 @@ h6 {
 
 /*========== 4.1 HEADER STYLES  ==========*/
 .header-section {
-  background: rgba(0, 0, 0, 0) url("../images/h4.jpg") no-repeat fixed center center / cover ;
+  background: rgba(0, 0, 0, 0) url("../images/header-bg.jpg") no-repeat fixed center center / cover ;
 }
 
 .header-text {
@@ -661,7 +661,7 @@ h6 {
 
 /*========== 4.7 EMAIL SUBSCRIBTION STYLES  ==========*/
 .email-subscribtion-section{
-	background: rgba(0, 0, 0, 0) url("../images/subs-bg.jpg") no-repeat fixed center center / cover ;
+	background: rgba(0, 0, 0, 0) url("../images/h2.jpg") no-repeat fixed center center / cover ;
 }
 .subscribtion-heading {
   margin-bottom: 60px;
