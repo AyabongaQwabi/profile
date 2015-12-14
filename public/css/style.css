@@ -533,7 +533,7 @@ h6 {
   padding: 20px;
 }
 .feature-icon img{
-
+  width:40%;
   max-width: 100%;
 }
 .feature-content {

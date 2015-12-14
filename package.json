@@ -14,5 +14,9 @@
   "license": "BSD-2-Clause",
   "bugs": {
     "url": "https://github.com/AyabongaQwabi/profile/issues"
+  },
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "nodemailer": "^1.10.0"
   }
 }
