@@ -3,7 +3,7 @@
   var app = express();
   var nodemailer = require('nodemailer');
 
-  app.use(express.static('public'))
+  app.use(express.static(__dirname+'/public'))
   app.use(bodyParser.urlencoded({ extended: false }));
   app.use(bodyParser.json());
 
@@ -14,14 +14,14 @@
         pass: 'amathumbu11'
     }
   });
-  
+
 
   app.get('/',function(req,res){
 
-  	res.sendFile('index.html')
+  	res.sendfile('index.html')
 
   })
- 
+
 
 app.post('/contact',function(req,res){
 	var client = req.body;
@@ -34,24 +34,24 @@ app.post('/contact',function(req,res){
 			  "</div>"
     console.log(msg)
 	var mailOptions = {
-	    from: 'online profile', // sender address 
-	    to: 'ayabonga@projectcodex.co', // list of receivers 
-	    subject: 'New Client', // Subject line 
-	    text: msg, // plaintext body 
-	    html: msg // html body 
+	    from: 'online profile', // sender address
+	    to: 'ayabonga@projectcodex.co', // list of receivers
+	    subject: 'New Client', // Subject line
+	    text: msg, // plaintext body
+	    html: msg // html body
 	};
- 
-	
+
+
 	transporter.sendMail(mailOptions, function(error, info){
 	    if(error){
 	        return console.log(error);
 	    }
 	    console.log('Message sent: ' + info.response);
 	    res.redirect('/')
-	 
+
 	});
 })
 
 
 
-  app.listen(8080)
+module.exports = app;
